@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/encriptado_2.png" />
+    <link rel="stylesheet" href="encriptador.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+<header class="header">
+    <nav class="header__nav"><img src="img/Logo.png" alt="Logo de alura"></nav>
+</header>
+
+<main class="contenedor">
+    <section class="contenedor_texto">
+        <div class="contenedor__general">
+            <textarea class="textarea" id="input-text" placeholder="Escribe el texto aquí..."></textarea>
+            <h4 class="advertencia__textarea">Solo letras minúsculas y sin acentos</h4>
+            <div class="contenedor__botones">
+                <button class="boton__cifrar" id="encriptar__boton">Cifrar</button>
+                <button class="boton__descifrar" id="desencriptar__boton">Descifrar</button>
+            </div>
+        </div>
+
+        <div class="caja__texto__cifrado">
+            <img class="muñeco" src="img/Muñeco.png" alt="elemento gráfico">
+            <h2 class="mensaje__caja__texto">Ningún mensaje fue encontrado</h2>
+            <p class="caja__texto__cifrado__2">Ingrese el texto que desee cifrar o descifrar</p>
+        </div>
+
+        <div id="contenedor__texto__de__salida" class="caja__texto__cifrado" style="display: none;">
+            <p id="texto__de__salida" class="mensaje__caja__texto"></p>
+            <button id="copiar">Copiar</button>
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Desarrollado por Priska 2024</p>
+    <img class="icono_innovacion" src="img/innovacion__.png" alt="Ícono innovacion">
+</footer>
+
+<script src="encriptador.js"></script>
+</body>
+</html>
